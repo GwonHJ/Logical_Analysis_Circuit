@@ -18,8 +18,13 @@
             
 개요도
 
+![vending](https://user-images.githubusercontent.com/45057466/48911086-1f837400-eeb5-11e8-9c49-4b622c4dda0e.png)
+
 
 코드 분석
+
+![1](https://user-images.githubusercontent.com/45057466/48911088-1f837400-eeb5-11e8-8563-005be140f66f.png)
+
 
       - INPUT : clk, reset, c50, c100, c500, coffee
 
@@ -31,6 +36,7 @@
 
       - RESET을 누르면 모든 값을 초기화 해준다.
 
+![2](https://user-images.githubusercontent.com/45057466/48911089-201c0a80-eeb5-11e8-9a61-106283a4f9c8.png)
 
 
       - case 문을 이용하여 state활용
@@ -47,7 +53,8 @@
       - else : 버튼을 누르지 않을 경우 -> 상태 변화x 
       
       
-      
+ ![3](https://user-images.githubusercontent.com/45057466/48911091-201c0a80-eeb5-11e8-880d-3177e6d6ff96.png)
+  
       - state가 won300일 때 -> 커피를 뽑을 수 있음
 
       - if ( coffee = ‘1’ ) <- 앞에서는 커피버튼의 입력을 고려할 일이 없지만 state가 won300일 때 부터는 coffee버튼도 고려해줘야함
@@ -59,7 +66,7 @@
                 (state가 won200일 때부터 500원을 입력하면 반환됨)
 
 
-
+![4](https://user-images.githubusercontent.com/45057466/48911084-1f837400-eeb5-11e8-8e8e-96a661955e9f.png)   
       - state가 won600일때는 coffee버튼을 눌러도 여전히 300원이 남아있음
          -> 커피를 뽑을 수 있는 상태이다.
           -> LED에 불이 꺼지지 않는다.
