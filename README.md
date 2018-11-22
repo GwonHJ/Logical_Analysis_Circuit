@@ -1,6 +1,8 @@
 # Logical_Analysis_Circuit(논리회로설계)
 # Vendingmachine
 
+논리회로 설계 Termproject : 자판기 설계하기
+
 구현기능
 
           ● 필수 기능
